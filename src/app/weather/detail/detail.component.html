@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card" style="width: 76%;">
+    <div class="card-content white">
+      <header>
+        <h1>{{ cityName }} Forecast</h1>
+      </header>
+      <div>
+        <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [type]="lineChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
